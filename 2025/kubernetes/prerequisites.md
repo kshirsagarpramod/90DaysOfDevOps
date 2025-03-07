@@ -22,6 +22,9 @@ Move it to a directory in your PATH
 
 mv ./kind /usr/local/bin/kind
 
+To check installed kind version
+
+    kind --version or kind version
 ===================================================================================
 
 ## Install kubectl
@@ -35,3 +38,7 @@ chmod +x kubectl
 Move it to a directory in your PATH
 
 mv ./kubectl /usr/local/bin/kubectl
+
+To check installed kubectl version
+
+    kubectl version
