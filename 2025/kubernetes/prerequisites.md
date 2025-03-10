@@ -16,7 +16,7 @@ Use the new docker group:
 
     newgrp docker      
 
-===================================================================================
+
 
 ## Install Kind
 
@@ -34,7 +34,7 @@ To check installed kind version
 
     kind --version
     kind version
-===================================================================================
+
 
 ## Install kubectl
 
