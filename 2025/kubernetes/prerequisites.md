@@ -30,12 +30,14 @@ Make it executable
 
 Move it to a directory in your PATH
 
-    mv ./kind /usr/local/bin/kind
+    sudo mv ./kind /usr/local/bin/kind
 
 To check installed kind version
 
     kind --version
-    kind version
+OR
+
+    kind version    
 
 
 ## Install kubectl
@@ -48,7 +50,7 @@ Make it executable
 
 Move it to a directory in your PATH
 
-    mv ./kubectl /usr/local/bin/kubectl
+    sudo mv ./kubectl /usr/local/bin/kubectl
 
 To check installed kubectl version
 
