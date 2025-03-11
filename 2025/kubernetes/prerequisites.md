@@ -10,13 +10,15 @@ Install Docker:
 
 Add current user to the docker group: 
 
-    usermod -aG docker $USER
+    sudo usermod -aG docker $USER
 
 Use the new docker group: 
 
     newgrp docker      
 
+Check Docker is installed:
 
+        docker ps
 
 ## Install Kind
 
