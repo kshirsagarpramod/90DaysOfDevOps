@@ -12,7 +12,8 @@ Cloud-controller manager →  It is a tool that integrates a Kubernetes cluster 
 
 Cubectl →  It is command line tool that allows user to control Kubernetes cluster.
 
-============================================================================
+----------------------------------------------------------------------------------------
+
 
 # Node components :-
 	
@@ -23,5 +24,5 @@ Kube Proxy → It is responsible For managing rules & facilitating communication
 
 
 Container runtime → It is the software component responsible for managing the lifecycle of container including pulling images from registry creating and running them, and monitoring their execution on the host system.
-	
-============================================================================
+
+ ---------------------------------------------------------------------------------
