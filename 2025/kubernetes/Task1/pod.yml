@@ -1,0 +1,17 @@
+Kind: Pod                   ### Type of kubernetes object. (In this case Pod is the object to be created)
+apiVersion: v1              ### Specifies the version of the Kubernetes API that the resource adheres to.
+
+metadata:                         ### It describes other data.
+  name: nginx-pod                 ### Name of POD.
+  namespace: online-shop-ns       ### Name of the namespace.
+
+spec:                       ### Specification about pod.
+  containers:               ### Creating container.
+    - name: nginx           ### Name of the container.        
+      image: nginx:latest   ### Image and version of POD.
+      ports:                ### Ports to expose the application.  
+        containerPort: 80   ### Here expose the Port 80.
+
+    
+
+
