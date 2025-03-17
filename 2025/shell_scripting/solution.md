@@ -1,13 +1,12 @@
-**1**. **User creation**
+**User creation**
 
+	#!/bin/bash
 
-#!/bin/bash
+				### User creation ###
 
-###################User creation#############################
+	First_Arg=$1
 
-First_Arg=$1
-
-function Usercreation ( ) {
+	function Usercreation ( ) {
 
         if [ "$First_Arg" == "-r" ] || [ "$First_Arg" == "--reset" ]; then
 
@@ -37,42 +36,42 @@ function Usercreation ( ) {
 
         fi
 
-}
+	}
+
+	Usercreation
 
 
-Usercreation
 
-===================================================================================================================
+**User_Password_Reset**
 
-**2** **User_Password_Reset**
-#!/bin/bash
+	#!/bin/bash
 
-###################User_Password_Reset#############################
+				####  User_Password_Reset  ####
 
-First_Arg=$1
+	First_Arg=$1
 
-function Userpasswordchange ( ) {
+	function Userpasswordchange ( ) {
 
-        if [ "$First_Arg" == "-r" ] || [ "$First_Arg" == "--reset" ]; then
+        	if [ "$First_Arg" == "-r" ] || [ "$First_Arg" == "--reset" ]; then
 
-        read -p "Please enter username to reset the password:" username
-        validation=$(cat /etc/passwd | grep $username | wc -l)
+        	read -p "Please enter username to reset the password:" username
+        	validation=$(cat /etc/passwd | grep $username | wc -l)
 
-                if
-                        [ "$validation" == "0" ]; then
+                	if
+                       		 [ "$validation" == "0" ]; then
 
-                        echo "$username user  is not present on the server"
-                        exit
-                else
+                        	echo "$username user  is not present on the server"
+                        	exit
+                	else
 
                         echo "Please enter the new password for $username"
                         read -s newpassword
                         echo -e "$newpassword\n$newpassword" | sudo passwd "$username"
 
-                    if [ $? -eq 0 ]; then
-                        echo "Password for $username has been changed successfully."
-                    else
-                        echo "Failed to change the Password for $username."
+                   		 if [ $? -eq 0 ]; then
+                        	echo "Password for $username has been changed successfully."
+                   		 else
+                        	echo "Failed to change the Password for $username."
                      fi
 
                 fi
@@ -82,8 +81,9 @@ function Userpasswordchange ( ) {
 
         fi
 
-}
+	}
 
-Userpasswordchange
+	Userpasswordchange
 
-============================================================================================
+
+
